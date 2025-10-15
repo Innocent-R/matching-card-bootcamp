@@ -5,9 +5,6 @@
     margin: 0;
 }
 body{
-    /* display: flex; 
-    justify-content: center;
-    align-items: center; */
     background-color: rgb(18, 12, 73);
     color: white;
     padding: 50px;
@@ -23,8 +20,7 @@ h1{
     position: relative;
     padding: 40px 60px;
     flex-direction: column;
-    gap: 30px;
-    /* width: 50%; */
+    /* gap: 100px; */
     background-color: rgb(189, 189, 7);
 }
 
@@ -34,7 +30,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(5, 140px);
     grid-template-rows: repeat(2, cal(140px / 2 * 3));
-    grid-gap: 16px;
+    grid-gap: 14px;
     justify-content: center;
     width: 500px;
     height: 500px;
@@ -57,9 +53,6 @@ h1{
     font-size: 5em;
     border-radius: 4px;
 }
-/* .card.flipped{
-    /* background-color: aqua; */
-    /* transform: rotateY(180deg); */
 
 .item::after{
     position: absolute;
@@ -89,14 +82,20 @@ h1{
     font-size: 1em;
     color: white;
 }
-/* .card .front {
-    display: flex;
-    justify-content: center;
-    transform: rotateY(180deg);
+@media screen and (max-width: 920px){
+    .item{
+        width: 100px;
+        height: 100px;
+        font-size: 3em;
+    }
+    .gameCards{
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(5, cal(140px / 2 * 3));
+    grid-gap: 10px;
+    margin: 0px;
+    padding: 0px;
+    height: 600px;
+        
+    }
 }
-.card .back {
-    background-image: url("cards.jpg");
-    background-position: center center;
-    background-size: cover;
-    backface-visibility: hidden;
-}  */
